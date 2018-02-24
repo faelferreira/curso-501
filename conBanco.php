@@ -31,10 +31,12 @@ class ContaBanco{
 	private $saldo;
 	private $titular;
 
-public function _construct(string $titular,float $saldo){
+public function __construct(string $titular,float $saldo){
 
 	echo $this->titular = $titular;
-	echo $this->$conta1->gerarNumConta();;
+	echo "<hr>";
+	echo $this->numConta = $this->gerarNumConta();
+	echo "<hr>";
 	echo $this->saldo = $saldo;
 }
 
@@ -58,10 +60,10 @@ public function setTitular(string $nome){
 }
 
 public function sacar(float $saque){
-	if(this->getSaldo()== 0){
+	if($this->getSaldo()== 0){
 			echo "conta vazia impossivel sacar";
 	}else{
-		 this->setSaldo(this->getSaldo()-$saque);
+		 $this->setSaldo($this->getSaldo()-$saque);
 	}
 }
 public function depositar(float $deposito){
@@ -77,10 +79,12 @@ public function verNumConta(){
 
 }
 public function gerarNumConta(){
-	$this->gerarConta = rand();
-	
+return	$this->gerarConta = rand();
+
 }
 
 }
 
 $conta1 = new ContaBanco("rafael",50.00);
+//var_dump($conta1);
+echo "<hr>";
