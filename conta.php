@@ -2,8 +2,10 @@
 
 class Conta{
 public $numConta;
-public $saldo;
+private $saldo;
  
+
+
 public function sacar(float $saque){
 	echo "estou sacando". $saque."<br>";
 
@@ -16,7 +18,6 @@ public function depositar(float $deposito){
 public function verSaldo(){
 	return $this->saldo;
 }
-
 
 }
 

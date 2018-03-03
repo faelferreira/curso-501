@@ -5,6 +5,10 @@
 		public $marca;
 		public $tampada;
 		
+	public function_construct(){
+	echo ""
+	}
+
 	public function escrever(string $texto){
 		echo "ecrevendo";
 		echo $texto;
@@ -54,3 +58,5 @@
 
 	echo"<hr>";
 	echo $azul->tampar();
+
+	

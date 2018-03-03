@@ -79,7 +79,7 @@ public function verNumConta(){
 
 }
 public function gerarNumConta(){
-return	$this->gerarConta = rand();
+	return	$this->gerarConta = rand();
 
 }
 
