@@ -23,3 +23,6 @@ $dbPostgres->commit();
 }
 //echo "<pre>";
 //print_r($usuarios);
+
+
+//Roberto acher

@@ -16,7 +16,7 @@ class UsuarioDAO
 			$stmt = $this->con->prepare($sql);
 			$stmt->bindValue(":usuario",$usuario->getUsuario());
 			$stmt->bindValue(":senha",$usuario->getSenha());
-			$stmt->execute();
+			//$stmt->execute();
 			$this->con->commit();
 		} catch (PDOException $e) {
 			$this->con->rollback();
