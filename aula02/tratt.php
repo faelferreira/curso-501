@@ -7,10 +7,10 @@ trat Log{
 
 	}
 }                       
-class 2{
+class X{
 
 }
-class  y estends x{
+class  y estends X{
 
 	use Log;
 	public function save(){
