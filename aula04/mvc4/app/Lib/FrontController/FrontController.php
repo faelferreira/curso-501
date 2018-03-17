@@ -14,6 +14,7 @@ class FrontController
 		$controller = 'Controller\\' . ucfirst($controller . 'Controller');
 		// new Controller\Index;
 		$objController = new $controller();
+		die('erro');
 		//obj(Index)->index;
 		$objController->$action($id);
 	}

@@ -1,11 +1,11 @@
 <?php 
-namespace DAO;
+namespace Lib\Db;
 use PDO;
 class Conexao
 {
-	private static $user = "rafael";
-	private static $pass = "123";
-	private static $dsn  = "pgsql:host=localhost;dbname=aula04";
+	private static $user = DBUSER;
+	private static $pass = DBPASS;
+	private static $dsn  = DBDSN;
 	private static $instance = null;
 	private function __construct(){}
 	private function __clone(){}
