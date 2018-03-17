@@ -9,6 +9,7 @@
 
 		public function run(){
 			$string = this->model->getString();
+			include 'view.php';
 		}
 	}
-	(new Controller())->run();
+	
